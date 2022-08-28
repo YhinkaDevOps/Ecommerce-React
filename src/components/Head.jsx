@@ -1,5 +1,6 @@
 import React from 'react'
-import {BsFillTelephoneFill, BsEnvelope} from "react-icons/bs"
+import {BsFillTelephoneFill, BsEnvelope} from "react-icons/bs";
+
 
 const Head = () => {
   return (
@@ -7,15 +8,19 @@ const Head = () => {
       <section className='head'>
         <div className="conatainer d_flex">
           <div className="left_row">
-            <BsFillTelephoneFill/>
+            <BsFillTelephoneFill className='icon'/>
             <label htmlFor="">+234 8130 300 335</label>
-            <BsEnvelope/>
+            <BsEnvelope className='icon'/>
             <label htmlFor="">yinkabakare30@gmail.com</label>
           </div>
           <div className="right row RText">
             <label >Theme FAQ's</label>
             <label >Need Help</label>
-            <span></span>
+            <span>🏳️</span>
+            <label htmlFor="">EN</label>
+            <span>🏳️</span>
+            <label htmlFor="">USD</label>
+            
 
           </div>
 
