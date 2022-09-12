@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { BiBorderAll } from "react-icons/bi";
 import { MdArrowDropDown } from "react-icons/md";
 import { Link } from 'react-router-dom';
-import { FaTimes, FaBars } from 'react-icons/fa';
+import { FaTimes } from 'react-icons/fa';
 
 
 const Navbar = () => {
@@ -27,7 +27,7 @@ const Navbar = () => {
                     </ul>
 
                     <button className='toggle' onClick={handleClick}>
-                        {MobileMenu ? <FaBars/>:<FaTimes/>}
+                        {MobileMenu ? <i class="fa-solid fa-bars"></i>:<FaTimes/>}
                     </button>
                 </div>
             </div>

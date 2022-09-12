@@ -49,3 +49,11 @@ li {
 .RText {
     text-align-last: right;
 }
+
+.search{
+    padding:20px 0; 
+}
+
+.search .logo-width img{
+    height:30px
+}
