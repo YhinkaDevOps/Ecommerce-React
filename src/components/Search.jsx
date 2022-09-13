@@ -1,10 +1,12 @@
 import React from 'react'
 import logo from '../components/images/logo4.png'
-
 import {Link} from 'react-router-dom';
 
-
 const Search = () => {
+  window.addEventListener("scroll", function(){
+    const search = document.querySelector(".search")
+    search.classList.toggle("active", this.window>this.screenY >100)
+  })
   return (
     <div>
       <section className='search'>
@@ -22,7 +24,7 @@ const Search = () => {
            <i class="fa-solid fa-user"></i>
             <div className='cart'>
               <Link to ="/cart"><i class="fa-solid fa-cart-shopping"></i></Link>
-              <span></span>
+              <span>0</span>
             </div>
           </div>
 

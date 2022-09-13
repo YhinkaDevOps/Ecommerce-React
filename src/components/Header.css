@@ -56,5 +56,132 @@
 }
 
 .cart{
-position
+position:relative;
+}
+
+.search .cart span{
+    position:absolute;
+    top:-10px;
+    right:0;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    text-align: center;
+    background-color: red;
+    font-size:12px;
+    color:white;
+}
+
+.search .f_flex{
+    justify-content: end;
+}
+
+.categories{
+    background-color:white;
+    padding:0 30px;
+    border-radius: 5px;
+    height:6vh;
+    margin-top:5px;
+}
+
+.categories span{
+    margin-right:20px;
+    font-size:30px;
+    margin-top:10px;
+}
+
+.categories h4 {
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.categories h4  i{
+    margin-left:10px;
+}
+
+header{
+    height:8vh;
+    box-shadow: -1px 15px 17px -8px rgba(0,0,0,0.2);
+}
+
+header ul {
+    line-height:8vh;
+}
+
+header ul li{
+    margin-left:30px;
+}
+
+header ul li a {
+    transition:0.2s;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+header ul li a:hover {
+  color:red
+}
+
+.search .active{
+    height:12vh;
+    position:fixed;
+    top:0;
+    z-index:1000;
+    width:100px;
+    background-color: #fff;
+    box-shadow:-1px 11px 24px -11px rgba(0,0,0,0.2)
+}
+
+@media (max-width:768px){
+    header ul{
+        padding-top: 30px; 
+    }
+    .nav-links-MobileMenu{
+        position: absolute;
+        display:block;
+        list-style-type: none;
+        left:0;
+        top:0;
+        transition: 0.2s;
+        width:100%;
+        height:100vh;
+        z-index: 888;
+        background-color: #fff;
+        box-shadow:rgba(50,50,93,0.23) 0 50px 100px -20px, rgba(0,0,0,0.3) 0 30px 60px -30px;
+    }
+
+    header ul li{
+        width:100%;
+        transition: all 0.2s;
+        text-transform: uppercase;
+        line-height: 70px;
+    }
+
+    header .link{
+        display: none;
+    }
+
+    .close, .open{
+        position:absolute;
+        top: 35px;
+        right:20px;
+        color:red;
+        display:block;
+        font-size:25px;
+        z-index:999;
+    }
+
+    .close{
+        right:45%;
+    }
+
+    .close .home-btn{
+        background:linear-gradient(145deg, #e2e8ec, #ffffff);
+        color:#ff014f;
+        border-radius:50%;
+        padding:0;
+        width:60px;
+        height:60px;
+        line-height:60px;
+    }
 }

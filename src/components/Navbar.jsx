@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import { BiBorderAll } from "react-icons/bi";
-import { MdArrowDropDown } from "react-icons/md";
 import { Link } from 'react-router-dom';
-import { FaTimes } from 'react-icons/fa';
+
 
 
 const Navbar = () => {
@@ -14,7 +13,7 @@ const Navbar = () => {
             <div className="container d_flex">
                 <div className="categories d_flex">
                     <span className=''><BiBorderAll/></span>
-                    <h4>Categories <MdArrowDropDown/></h4>
+                    <h4>Categories <i class="fa-solid fa-caret-down"></i></h4>
                 </div>
 
                 <div className='navlink'>
@@ -27,7 +26,9 @@ const Navbar = () => {
                     </ul>
 
                     <button className='toggle' onClick={handleClick}>
-                        {MobileMenu ? <i class="fa-solid fa-bars"></i>:<FaTimes/>}
+                        {MobileMenu ? <i class="fa-solid fa-times close home-bth"></i>:
+                        <i class="fa-solid fa-xmark open"></i>
+                        }
                     </button>
                 </div>
             </div>
