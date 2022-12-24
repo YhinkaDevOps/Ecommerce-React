@@ -20,11 +20,7 @@ const Head = () => {
             <label htmlFor="">EN</label>
             <span>🏳️</span>
             <label htmlFor="">USD</label>
-
-
           </div>
-
-
         </div>
 
       </section>
