@@ -77,8 +77,8 @@ position:relative;
 }
 
 .categories{
-    background-color:white;
-    padding:0 30px;
+    background-color:#f6f9fc;
+    padding: 30px;
     border-radius: 5px;
     height:6vh;
     margin-top:5px;
@@ -116,6 +116,10 @@ header ul li a {
     transition:0.2s;
     font-size: 15px;
     font-weight: 400;
+}
+
+.open{
+    display: none;
 }
 
 header ul li a:hover {
@@ -169,6 +173,10 @@ header ul li a:hover {
         display:block;
         font-size:25px;
         z-index:999;
+    }
+
+    .open{
+        top:33%;
     }
 
     .close{

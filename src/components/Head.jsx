@@ -6,7 +6,7 @@ const Head = () => {
   return (
     <div>
       <section className='head'>
-        <div className="conatainer d_flex">
+        <div className="container d_flex">
           <div className="left_row">
             <BsFillTelephoneFill className='icon'/>
             <label htmlFor="">+234 8130 300 335</label>
@@ -20,7 +20,7 @@ const Head = () => {
             <label htmlFor="">EN</label>
             <span>🏳️</span>
             <label htmlFor="">USD</label>
-            
+
 
           </div>
 
