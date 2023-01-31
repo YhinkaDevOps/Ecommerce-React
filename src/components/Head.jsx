@@ -7,7 +7,7 @@ const Head = () => {
     <div>
       <section className='head'>
         <div className="container d_flex">
-          <div className="left_row">
+          <div className="left row">
             <BsFillTelephoneFill className='icon'/>
             <label htmlFor="">+234 8130 300 335</label>
             <BsEnvelope className='icon'/>
