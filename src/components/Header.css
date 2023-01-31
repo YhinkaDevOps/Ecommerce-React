@@ -80,7 +80,7 @@ position:relative;
 
 .categories{
     background-color:#f6f9fc;
-    padding: 30px;
+    padding:0 30px;
     border-radius: 5px;
     height:6vh;
     margin-top:5px;
@@ -89,12 +89,11 @@ position:relative;
 .categories span{
     margin-right:20px;
     font-size:30px;
-    margin-top:10px;
 }
 
 .categories h4 {
   font-weight: 500;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 .categories h4  i{
@@ -158,7 +157,7 @@ header ul li a:hover {
 
     header ul li{
         width:100%;
-        transition: all 0.2s;
+        transition: all 0.2s ease-in-out ;
         text-transform: uppercase;
         line-height: 70px;
     }
@@ -171,14 +170,10 @@ header ul li a:hover {
         position:absolute;
         top: 35px;
         right:20px;
-        color:red;
+        color:#ff014f;
         display:block;
         font-size:25px;
         z-index:999;
-    }
-
-    .open{
-        top:33%;
     }
 
     .close{
