@@ -1,18 +1,20 @@
 import React from 'react'
-import logo from '../assets/img/olayinka.jpg'
+import logo from '../assets/img/logo.svg'
 import {Link} from 'react-router-dom';
 
 const Search = () => {
-  window.addEventListener("scroll", function(){
-    const search = document.querySelector(".search")
-    search.classList.toggle("active", this.window>this.screenY >100)
-  })
+   window.addEventListener("scroll", function () {
+     const search = document.querySelector(".search");
+     search.classList.toggle("active", window.scrollY > 100);
+   });
+
   return (
     <div>
       <section className="search">
         <div className="container c_flex">
           <div className="logo width">
-            <img className="logo__" src={logo} alt="logo" />
+            <Link to="/"><img className="logo__" src={logo} alt="logo" /></Link>
+          
           </div>
           <div className="search-box f_flex">
             <i className="fa fa-search"></i>
